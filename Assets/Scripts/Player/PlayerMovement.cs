@@ -8,10 +8,11 @@ public class PlayerMovement : MonoBehaviour
     //Movement
     [Header("Running and jumping")]
     [SerializeField] private float moveSpeed = 500f;
+    [SerializeField] [Range(0.1f, 0.99f)] private float inertiaReduction = 0.95f;
     private Vector3 moveDir = new Vector3();
-    private Vector3 lastDir = new Vector3();
     //Jumping
     [SerializeField] private float jumpHeight = 1000f;
+    [SerializeField] private float horizontalJumpForce = 5f;
     [SerializeField] private float gravityModifier = 750f;
     [SerializeField] [Range(0f, 1f)] private float airControlMod = 0.1f;
     //Ground Check
@@ -44,7 +45,6 @@ public class PlayerMovement : MonoBehaviour
         //jumping imput and ground check
         if (isGrounded() && !hasJumped)
         {
-            lastDir = moveDir;
             if (Input.GetKeyDown(KeyCode.Space))
             {
                 hasJumped = true;
@@ -53,8 +53,19 @@ public class PlayerMovement : MonoBehaviour
         Airborne = !isGrounded();
 
         //jump modifier
-        if (moveDir == Vector3.zero) { currentTimeRunning = 0; }
-        else { CalculateModifier(); }
+        if (moveDir == Vector3.zero) 
+        { 
+            currentTimeRunning = 0;
+            //reduce inertia if no key is pressed
+            if (isGrounded())
+            {
+                rb.velocity = new Vector3(rb.velocity.x * inertiaReduction, rb.velocity.y, rb.velocity.z * inertiaReduction);
+            }
+        }
+        else 
+        { 
+            CalculateModifier(); 
+        }
 
         //play steps sound
         if (isGrounded() && moveDir != Vector3.zero && !isPlaying)
@@ -82,13 +93,13 @@ public class PlayerMovement : MonoBehaviour
             rb.AddForce(moveDir * moveSpeed * Time.fixedDeltaTime);
         } else
         {
-            rb.AddForce(lastDir * moveSpeed * Time.fixedDeltaTime * (1-airControlMod));
             rb.AddForce(moveDir * moveSpeed * airControlMod * Time.fixedDeltaTime);
         }
 
         if (hasJumped)
         {
             rb.AddForce(Vector3.up * jumpHeight * CalculateModifier());
+            rb.AddForce(moveDir * horizontalJumpForce * CalculateModifier(), ForceMode.Impulse);
             hasJumped = false;
         }
     }

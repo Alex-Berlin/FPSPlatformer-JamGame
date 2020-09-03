@@ -1687,6 +1687,36 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1611969579}
+    - target: {fileID: 8205844348918044568, guid: 8fcdd6edd054c0b40af210c29393678d,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LoadNextScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 9000978123420372583, guid: 8fcdd6edd054c0b40af210c29393678d,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9000978123420372583, guid: 8fcdd6edd054c0b40af210c29393678d,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9000978123446655123, guid: 8fcdd6edd054c0b40af210c29393678d,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9000978123446655123, guid: 8fcdd6edd054c0b40af210c29393678d,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9000978123446655123, guid: 8fcdd6edd054c0b40af210c29393678d,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8fcdd6edd054c0b40af210c29393678d, type: 3}
 --- !u!1001 &9000978122765799881
