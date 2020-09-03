@@ -12,6 +12,7 @@ public class MovePlatformUp : MonoBehaviour, IPlatform
     private Vector3 pointToMove;
     [SerializeField] private float standardMoveDistance = 5f;
     private Vector3 startingPosition;
+    private float moveDistance;
     private bool isReturning = false;
     [SerializeField][Range(0.01f, 1f)] private float returnMod = 0.25f;
 
@@ -30,6 +31,7 @@ public class MovePlatformUp : MonoBehaviour, IPlatform
         {
             pointToMove = transform.position + transform.up * standardMoveDistance;
         }
+        moveDistance = Vector3.Distance(startingPosition, pointToMove);
     }
     /// <summary>
     /// Moves platform with kinematic rigidbody to target position.
@@ -61,14 +63,16 @@ public class MovePlatformUp : MonoBehaviour, IPlatform
     }
     private void Update()
     {
-        if (Vector3.Distance(transform.position, pointToMove) < 0.1f && isMoving)
+        if (Vector3.Distance(transform.position, startingPosition) >= moveDistance && isMoving)
         {
             isMoving = false;
+            transform.position = pointToMove;
             isReturning = true;
         }
-        else if (Vector3.Distance(transform.position, startingPosition) < 0.1f && isReturning)
+        else if (Vector3.Distance(transform.position, pointToMove) >= moveDistance && isReturning)
         {
             isReturning = false;
+            transform.position = startingPosition;
         }
 
     }

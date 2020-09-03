@@ -13,6 +13,7 @@ public class MovePlatformToPlace : MonoBehaviour, IPlatform
     private Vector3 pointToMove;
     [SerializeField] private float standardMoveDistance = 5f;
     private Vector3 startingPosition;
+    private float moveDistance;
     [SerializeField] [Range(0.01f, 1f)] private float returnMod = 0.25f;
 
     private void Start()
@@ -31,6 +32,7 @@ public class MovePlatformToPlace : MonoBehaviour, IPlatform
         {
             pointToMove = transform.position + transform.up * standardMoveDistance;
         }
+        moveDistance = Vector3.Distance(startingPosition, pointToMove);
     }
 
     private void FixedUpdate()
@@ -52,15 +54,17 @@ public class MovePlatformToPlace : MonoBehaviour, IPlatform
     {
         if (isMoving)
         {
-            if (Vector3.Distance(transform.position, pointToMove) < 0.1f && !isReturning)
+            if (Vector3.Distance(transform.position, startingPosition) >= moveDistance && !isReturning)
             {
                 isReturning = true;
                 isMoving = false;
+                transform.position = pointToMove;
             }
-            else if (Vector3.Distance(transform.position, startingPosition) < 0.1f && isReturning)
+            else if (Vector3.Distance(transform.position, pointToMove) >= moveDistance && isReturning)
             {
                 isReturning = false;
                 isMoving = false;
+                transform.position = startingPosition;
             }
         }
     }

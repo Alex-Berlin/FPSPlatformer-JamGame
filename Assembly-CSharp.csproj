@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{1E1BE019-3449-D293-F190-CAFC8E45A238}</ProjectGuid>
+    <ProjectGuid>{48462E91-99AC-BFE5-F43B-03E35CDAB9CB}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -618,49 +618,49 @@
       <HintPath>D:/[!] Programs/[GameDev] Unity Editors/2019.4.8f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Serialization.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline.Editor">
-      <HintPath>D:/[Projects] Game Development/Unity Projects/TWG2020/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+      <HintPath>D:/[Projects] Coding/GitHubReps/FPSPlatformer-JamGame/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-      <HintPath>D:/[Projects] Game Development/Unity Projects/TWG2020/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+      <HintPath>D:/[Projects] Coding/GitHubReps/FPSPlatformer-JamGame/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ProBuilder">
-      <HintPath>D:/[Projects] Game Development/Unity Projects/TWG2020/Library/ScriptAssemblies/Unity.ProBuilder.dll</HintPath>
+      <HintPath>D:/[Projects] Coding/GitHubReps/FPSPlatformer-JamGame/Library/ScriptAssemblies/Unity.ProBuilder.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ProBuilder.Editor">
-      <HintPath>D:/[Projects] Game Development/Unity Projects/TWG2020/Library/ScriptAssemblies/Unity.ProBuilder.Editor.dll</HintPath>
+      <HintPath>D:/[Projects] Coding/GitHubReps/FPSPlatformer-JamGame/Library/ScriptAssemblies/Unity.ProBuilder.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ProBuilder.AssetIdRemapUtility">
-      <HintPath>D:/[Projects] Game Development/Unity Projects/TWG2020/Library/ScriptAssemblies/Unity.ProBuilder.AssetIdRemapUtility.dll</HintPath>
+      <HintPath>D:/[Projects] Coding/GitHubReps/FPSPlatformer-JamGame/Library/ScriptAssemblies/Unity.ProBuilder.AssetIdRemapUtility.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>D:/[Projects] Game Development/Unity Projects/TWG2020/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>D:/[Projects] Coding/GitHubReps/FPSPlatformer-JamGame/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>D:/[Projects] Game Development/Unity Projects/TWG2020/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>D:/[Projects] Coding/GitHubReps/FPSPlatformer-JamGame/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-      <HintPath>D:/[Projects] Game Development/Unity Projects/TWG2020/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+      <HintPath>D:/[Projects] Coding/GitHubReps/FPSPlatformer-JamGame/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>D:/[Projects] Game Development/Unity Projects/TWG2020/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>D:/[Projects] Coding/GitHubReps/FPSPlatformer-JamGame/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Postprocessing.Editor">
-      <HintPath>D:/[Projects] Game Development/Unity Projects/TWG2020/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
+      <HintPath>D:/[Projects] Coding/GitHubReps/FPSPlatformer-JamGame/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-      <HintPath>D:/[Projects] Game Development/Unity Projects/TWG2020/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+      <HintPath>D:/[Projects] Coding/GitHubReps/FPSPlatformer-JamGame/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Postprocessing.Runtime">
-      <HintPath>D:/[Projects] Game Development/Unity Projects/TWG2020/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
+      <HintPath>D:/[Projects] Coding/GitHubReps/FPSPlatformer-JamGame/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ProBuilder.AddOns.Editor">
-      <HintPath>D:/[Projects] Game Development/Unity Projects/TWG2020/Library/ScriptAssemblies/Unity.ProBuilder.AddOns.Editor.dll</HintPath>
+      <HintPath>D:/[Projects] Coding/GitHubReps/FPSPlatformer-JamGame/Library/ScriptAssemblies/Unity.ProBuilder.AddOns.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>D:/[Projects] Game Development/Unity Projects/TWG2020/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>D:/[Projects] Coding/GitHubReps/FPSPlatformer-JamGame/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>D:/[Projects] Game Development/Unity Projects/TWG2020/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>D:/[Projects] Coding/GitHubReps/FPSPlatformer-JamGame/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup></ItemGroup>
