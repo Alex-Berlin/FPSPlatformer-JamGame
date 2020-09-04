@@ -382,9 +382,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   idleSpeed: 15
   idleRotation: 30
-  detectionDistance: 23
-  detectionRotation: 45
-  timeToDetection: 0.25
+  detectionDistance: 40
+  detectionRotation: 50
+  timeToDetection: 0.2
   layer:
     serializedVersion: 2
     m_Bits: 1792
