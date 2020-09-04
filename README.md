@@ -14,7 +14,7 @@ WASD and SPACE for movement.
 
 
 
-/////***************/////
+<br>/////***************/////
 ► Artist Attribution
 Music By: "NO MIC"
 Track Name: "INSETR TRACK NAME HERE"
@@ -23,8 +23,8 @@ Track Name: "INSETR TRACK NAME HERE"
 • YouTube - https://www.youtube.com/nomicx
 • DOWNLOAD @ https://www.chilloutmedia.com/
 
-Licence: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0) - Full licence here: https://creativecommons.org/licenses/by/4.0/
+<br>Licence: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0) - Full licence here: https://creativecommons.org/licenses/by/4.0/
 
-• Music released by: Chill Out Records @ https://goo.gl/fh3rEJ &
+<br>• Music released by: Chill Out Records @ https://goo.gl/fh3rEJ &
 
-https://www.LoFi-HipHop.com
+<br>https://www.LoFi-HipHop.com
