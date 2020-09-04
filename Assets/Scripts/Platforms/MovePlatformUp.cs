@@ -50,6 +50,21 @@ public class MovePlatformUp : MonoBehaviour, IPlatform
             isMoving = true;
         }
     }
+    public void CheckIfArrived()
+    {
+        if (Vector3.Distance(transform.position, startingPosition) >= moveDistance - 0.01f && isMoving)
+        {
+            isMoving = false;
+            transform.position = pointToMove;
+            isReturning = true;
+        }
+        else if (Vector3.Distance(transform.position, pointToMove) >= moveDistance - 0.01f && isReturning)
+        {
+            isReturning = false;
+            transform.position = startingPosition;
+        }
+    }
+
     private void FixedUpdate()
     {
         if (isMoving)
@@ -59,21 +74,6 @@ public class MovePlatformUp : MonoBehaviour, IPlatform
         {
             MovePlatform(startingPosition, returnMod);
         }
-
-    }
-    private void Update()
-    {
-        if (Vector3.Distance(transform.position, startingPosition) >= moveDistance && isMoving)
-        {
-            isMoving = false;
-            transform.position = pointToMove;
-            isReturning = true;
-        }
-        else if (Vector3.Distance(transform.position, pointToMove) >= moveDistance && isReturning)
-        {
-            isReturning = false;
-            transform.position = startingPosition;
-        }
-
+        CheckIfArrived();//should be in fixed update to prevent walls shaking uncontrollably
     }
 }

@@ -47,25 +47,24 @@ public class MovePlatformToPlace : MonoBehaviour, IPlatform
             {
                 MovePlatform(startingPosition);
             }
+            CheckIfArrived();
         }
     }
 
-    private void Update()
+
+    private void CheckIfArrived()
     {
-        if (isMoving)
+        if (Vector3.Distance(transform.position, startingPosition) >= moveDistance - 0.01f && !isReturning)
         {
-            if (Vector3.Distance(transform.position, startingPosition) >= moveDistance && !isReturning)
-            {
-                isReturning = true;
-                isMoving = false;
-                transform.position = pointToMove;
-            }
-            else if (Vector3.Distance(transform.position, pointToMove) >= moveDistance && isReturning)
-            {
-                isReturning = false;
-                isMoving = false;
-                transform.position = startingPosition;
-            }
+            isReturning = true;
+            isMoving = false;
+            transform.position = pointToMove;
+        }
+        else if (Vector3.Distance(transform.position, pointToMove) >= moveDistance - 0.01f && isReturning)
+        {
+            isReturning = false;
+            isMoving = false;
+            transform.position = startingPosition;
         }
     }
 

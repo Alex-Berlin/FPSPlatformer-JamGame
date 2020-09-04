@@ -49,16 +49,17 @@ public class MovePlatformFixed : MonoBehaviour, IPlatform
                 MovePlatform(startingPosition);
             }
         }
+        CheckIfArrived();
     }
 
-    private void Update()
+    private void CheckIfArrived()
     {
-        if (Vector3.Distance(transform.position, startingPosition) >= moveDistance && !isReturning)
+        if (Vector3.Distance(transform.position, startingPosition) >= moveDistance - 0.01f && !isReturning)
         {
             isReturning = true;
             transform.position = pointToMove;
         }
-        else if (Vector3.Distance(transform.position, pointToMove) >= moveDistance && isReturning)
+        else if (Vector3.Distance(transform.position, pointToMove) >= moveDistance - 0.01f && isReturning)
         {
             isReturning = false;
             transform.position = startingPosition;
