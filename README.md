@@ -9,3 +9,22 @@ Controls:
 LMB for attacking
 Air at colored platform and press RMB to activate it.
 WASD and SPACE for movement.
+
+
+
+
+
+/////***************/////
+► Artist Attribution
+Music By: "NO MIC"
+Track Name: "INSETR TRACK NAME HERE"
+• Instagram - https://www.instagram.com/nomic_music/
+• Spotify - https://sptfy.com/8Z9U
+• YouTube - https://www.youtube.com/nomicx
+• DOWNLOAD @ https://www.chilloutmedia.com/
+
+Licence: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0) - Full licence here: https://creativecommons.org/licenses/by/4.0/
+
+• Music released by: Chill Out Records @ https://goo.gl/fh3rEJ &
+
+https://www.LoFi-HipHop.com
