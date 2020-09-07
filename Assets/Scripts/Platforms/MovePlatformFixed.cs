@@ -25,14 +25,8 @@ public class MovePlatformFixed : MonoBehaviour, IPlatform
         rb.collisionDetectionMode = CollisionDetectionMode.ContinuousSpeculative;
         startingPosition = transform.position;
 
-        if (objectToMove != null)
-        {
-            pointToMove = objectToMove.position;
-        }
-        else
-        {
-            pointToMove = transform.position + transform.up * standardMoveDistance;
-        }
+        pointToMove = objectToMove != null ? objectToMove.position : transform.position + transform.up * standardMoveDistance;
+
         moveDistance = Vector3.Distance(startingPosition, pointToMove);
     }
 
