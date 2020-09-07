@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEngine.Rendering;
 
 public class MenuManager : MonoBehaviour
 {
@@ -9,7 +10,10 @@ public class MenuManager : MonoBehaviour
 
     private void Start()
     {
-        sensitivity.value = mouseSensitivityModifier;
+        if (sensitivity != null)
+        {
+            sensitivity.value = mouseSensitivityModifier;
+        }
     }
 
     public void LoadNextScene()
@@ -27,7 +31,7 @@ public class MenuManager : MonoBehaviour
         Application.Quit();
     }
 
-    private void Update()
+    public void SetSensetivity()
     {
         mouseSensitivityModifier = sensitivity.value;
     }
